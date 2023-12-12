@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Eccellenza Italian Restaurant Reservation accept">
+    <meta name="keywords" content="italian food, restaurant, eccellenza">
+    <meta name="author" content="Rafal Zado, Leyla ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/header_reservation.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>Eccellenza Reservation</title>
+
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+    <header class='primary-header'>
+        <nav class="nav-list">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#about">About Us</a>
+                </li>
+                <li>
+                    <a href="index.html#menu">Menu</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="navLogo">
+            <span class="logo"><a href="index.html">ECCELLENZA</a></span>
+        </div>
+
+        <nav class="nav-list">
+            <ul>
+                <li>
+                    <a href="index.html#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="formulier.html">Reservations</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <div class="main-form-container">
+
+        <div class="main-form-inside-container">
+
+        <div class="reservation-title">Make A Reservation</div>
+    <section class="formm">
+      
+        <form id="formulier">
+            <div class="form-container">
+            <div class="form-left">
+               
+                <div class="form-box1">
+                    <label class="label-name" for="lunch-diner">Lunch/diner:</label>
+                    <select name="lunch-diner" id="lunch-diner">
+                     <option value=""> Make a choice </option>
+                     <option value="Lunch">Lunch</option>
+                     <option value="Diner">Diner</option> 
+                    </select>
+                    <span class="error" id="lunch_diner_error"></span>
+                </div>
+
+                <div class="form-box1">
+                    <label class="label-name" for="persons">Persons:</label>
+                    <select name="persons" id="persons">
+                     <option disabled selected> Make a choice </option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="6">6</option>
+                    </select>
+                    <span class="error" id="persons_error"></span>
+                </div>
+                
+                <div class="form-box1">
+                     <label class="label-name" for="time">Time: </label>
+                     <input type="time" id="time" name="time" min="12:00" max="20:00" required/>
+                     <span class="error" id="time_error"></span>
+                </div>
+
+
+                <div class="form-box1">
+                     <label class="label-name" for="date">Date:</label>
+                     <input type="date" id="date" name="date" value="08-12-2023" min="01-01-2023" max="01-01-2030" />
+                     <span class="error" id="date_error"></span>
+                </div>
+
+            
+                     <div class="form-box1 table">
+                        <div class="table-box-top">
+                        <p>Choose a table:</p>
+                        <span for="error" id="table_error"></span>
+                        </div>
+                        <div class="table-box-bottom">
+
+                            <input type="radio" name="table" id="table">
+                            <label for = "table" class="table-box">1</label>
+
+                            <input type="radio" name="table" id="table2">
+                            <label for="table2" class="table-box">2</label>
+
+                            <input type="radio" name="table" id="table3">
+                            <label for="table3"class="table-box">3</label>
+
+                            <input type="radio" name="table" id="table4">
+                            <label for="table4" class="table-box" >4</label>
+
+                            
+                            <input type="radio" name="table" id="table5">
+                            <label for="table5" class="table-box" >5</label>
+
+                            
+                            <input type="radio" name="table" id="table6">
+                            <label for="table6" class="table-box" >6</label>
+
+                            
+                            <input type="radio" name="table" id="table7">
+                            <label for="table7" class="table-box" >7</label>
+
+                            
+                            <input type="radio" name="table" id="table8">
+                            <label for="table8" class="table-box" >8</label>
+
+                            
+                            <input type="radio" name="table" id="table9">
+                            <label for="table9" class="table-box" >9</label>
+
+                            
+                            <input type="radio" name="table" id="table10">
+                            <label for="table10" class="table-box" >10</label>
+
+                            
+                            <input type="radio" name="table" id="table11">
+                            <label for="table11" class="table-box" >11</label>
+
+                            
+                            <input type="radio" name="table" id="table12">
+                            <label for="table12" class="table-box" >12</label>
+
+                            
+             
+                        </div>
+                     </div>
+                
+
+          </div>
+
+            <div class=" form-right">
+                <div class="fullname">
+                    <div class="form-box1 firstname"> 
+                        <label class="label-name" for="firstname">Firstname:</label>
+                        <input type="text" id="firstname">
+                        <span class="error" id="firstname_error"></span>
+                    </div>
+                    <div class="form-box1 lastname">
+                        <label class="label-name" for="lastname">Lastname:</label>
+                        <input type="text" id="lastname">
+                        <span class="error" id="lastname_error"></span>
+                    </div>
+                </div>
+                <div class="form-box1 form-email"> 
+                    <label class="label-name email-label" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="email_error"></span>
+                </div>
+                
+                <div class="form-box1 form-tel">
+                    <label class="label-name" for="tel">Telephone:</label>
+                    <input type="tel" id="tel" name="tel"/>
+                    <span class="error" id="tel_error"></span>
+                </div>
+
+
+                <div class="form-box1 form-text">
+                    <label class="label-textarea" for="text">Something we should know?</label>
+                    <textarea id="text" for="text" name="text" rows="4" cols="50"></textarea>
+                </div>
+
+
+                <div class="form-box1 form-check">
+         
+                    <div><label for="checkbox">I accept the terms and conditions.  
+                    </label></div>
+                    <div><input type="checkbox" id="checkbox" name="checkbox" unchecked></div>
+                    <span class="error" id="checkbox_error"></span>
+
+                </div>
+
+                <div class="form-box1 form-bttn">
+                     <input type="button"  value="Send" id="knop_verstuur" onclick="verstuur()">
+                </div>
+
+            </div>
+
+
+            </div>
+         </form>
+
+     
+
+    </section>
+
+    </div>
+
+    
+
+    </div>
+
+
+    <section class="bouwplan"> <img src="images/Eccellenza_bouwplan.png" alt=""></section>
+     
+  
+    <div class="mailchimp-main-container-bg">
+     <div class="mailchimp-main-container">
+     <div class="mailchimp-box-left">
+
+        <h2>Do you want some tips?</h2>
+        <p>Subscribe to our newsletter for a delectable array of Italian culinary tips! Learn the secrets behind perfect dough, master the art of boiling pasta to perfection, discover the key elements for crafting a sublime tomato sauce, and uncover a treasure trove of additional culinary delights!
+        </p>
+     </div>
+        <div class="mailchimp-box-right">
+    <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+
+  <div id="mc_embed_signup">
+      <form action="https://gmail.us21.list-manage.com/subscribe/post?u=726a383770cae7f34b5efb553&amp;id=6aed545e92&amp;f_id=0028ebe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="mc_embed_signup_scroll"><h2>Subscribe to our newsletter</h2>
+              <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+              <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+          <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+          </div>
+      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+          <input type="text" name="b_726a383770cae7f34b5efb553_6aed545e92" tabindex="-1" value="">
+      </div>
+          <div class="optionalParent">
+              <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                  <p style="margin: 0px auto;"><a href="http://eepurl.com/iFRbAI" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="images/Eccellenza_logo_appelblue.svg" alt="Intuit Mailchimp" ></span></a></p>
+              </div>
+          </div>
+      </div>
+  </form>
+  </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+        </div>
+    </div></div>
+  
+
+    <footer>
+        <p>Copyright 2023 © www.restaurant.be | all rights reserved | design by Leyla&Rafal 06/12/2023 for school projectpictures by Pexel </p>
+    </footer>
+
+    <script src="js_rafal/header.js"></script> 
+    <script src="JavaScript/controleFormulier.js"></script>
+</body>
+</html>
