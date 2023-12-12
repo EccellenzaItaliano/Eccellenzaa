@@ -8,6 +8,7 @@ let firstNameTxt;
 let lastNameTxt;
 let emailTxt;
 let telTxt;
+let textTxt;
 
 let checkTxt;
 
@@ -29,31 +30,10 @@ let allesCorrectIngevuld = true;
 
 // definitie helper functies: boven hoofdfunctie
 
-// function controleerVoorwaardenLunchDiner(){
 
-//     if(lunchDinerTxt !== "Lunch" && lunchDinerTxt !== "Diner") {
-//         document.getElementById("lunch_diner_error").innerHTML = "Choose";
-//         allesCorrectIngevuld = false;
-//     }else {
-//         document.getElementById("lunch_dinner_error").innerHTML = " ";
-//     }
-
-// }
-
-// function  controleerVoorwaardenPersons(){
-
-//     if( personsTxt !== "1" && personsTxt !== "2" && personsTxt !== "3" && personsTxt !== "4" && personsTxt !== "5" && personsTxt !== "6" ) {
-//         document.getElementById("persons_error").innerHTML = "Choose how many persons."
-//         allesCorrectIngevuld = false;
-//     }else {
-//         document.getElementById("persons_error").innerHTML = "";
-//     }
-// }
 
 function controleerVoorwaardenTime(){
-   //let currentTime = new Date.getTime();
-   //let minTime = new Date.getTime("12:00");
-   //let maxTime = new Date.getTime("22:00");
+
    
    let ingevoerdeTijd = parseInt(timeTxt);
 
@@ -214,6 +194,7 @@ function verstuur() {
     emailTxt=document.getElementById("email").value;
     telTxt=document.getElementById("tel").value;
     checkTxt=document.getElementById("checkbox").checked;
+    textTxt = document.getElementById("text").value;
     
     selectedLunchDinerTxt = document.getElementById("lunch-diner").selectedIndex;
     lunchDinerTxt = document.getElementById("lunch-diner").value;
@@ -249,8 +230,7 @@ function verstuur() {
         document.getElementById("persons_error").innerHTML="Select";
         allesCorrectIngevuld = false;
     }else {
-        // personsTxt = document.getElementById("persons").value;
-        // controleerVoorwaardenPersons();
+        
 
         document.getElementById("persons_error").innerHTML="";
     }
@@ -338,7 +318,9 @@ function verstuur() {
             + "tel:"
             + encodeURIComponent(telTxt)  
             + encodeURIComponent("\r\n\n")
-
+            + "text:"
+            + encodeURIComponent(textTxt)  
+            + encodeURIComponent("\r\n\n")
             + "lunch-diner:" 
             + encodeURIComponent(lunchDinerTxt) 
             + encodeURIComponent("\r\n\n")
@@ -357,9 +339,7 @@ function verstuur() {
             
             
            
-            // + "check:"
-            // + encodeURIComponent(checkTxt)
-            // + encodeURIComponent("\r\n\n")
+           
             window.location.href = link;
             window.location.href = "formuliersucces.html";
         
