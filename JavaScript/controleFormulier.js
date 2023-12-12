@@ -169,7 +169,7 @@ function controleerVoorwaardenEmail(){
 }
 
 function controleerVoorwaardenTel(){
-    let regExpTel = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
+    let regExpTel =  /^(0|\+32)[1-9](\d{2}){3}(\d{2})?$/;
 
     if( regExpTel.test(telTxt) == false){
         document.getElementById("tel_error").innerHTML="This number is invalid";
