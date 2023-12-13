@@ -270,7 +270,7 @@ function verstuur() {
               
     }
 
-    if(emailTxt==0){
+    if(emailTxt.length==0){
         document.getElementById("email_error").innerHTML="Your Email";
         allesCorrectIngevuld = false;
 
@@ -280,7 +280,7 @@ function verstuur() {
 
     }
 
-    if(telTxt==0){
+    if(telTxt.length==0){
         document.getElementById("tel_error").innerHTML="Your number";
         allesCorrectIngevuld = false;
     }else {
